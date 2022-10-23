@@ -30,7 +30,7 @@ export default function Home(){
              <div className='home_products'>
              
              {products.map(data =>(
-                           <Card cardimg={data.image}/>
+                           <Card cardimg={data.image} productname={data.title} price={data.price}/>
                     ))
              }                  
              </div>

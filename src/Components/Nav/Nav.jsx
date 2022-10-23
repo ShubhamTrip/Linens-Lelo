@@ -19,7 +19,7 @@ export default function Nav(){
             <div className="navbutton">
                 <button>Login</button>
                 <button>Register</button>
-                <button>Cart</button>
+                <button>Cart ({0})</button>
             </div>
         </div>
     );

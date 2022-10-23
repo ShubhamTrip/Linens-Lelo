@@ -1,6 +1,6 @@
+
 .card{
     width: 22rem;
-    height: 30rem;
     background-color:rgb(29, 29, 29);
     border-radius: 5px 5px 15px 15px;
     margin: 20px;
@@ -13,4 +13,32 @@
 .card_img img{
     width:21.4rem;
     height: 20rem;
+}
+.card_text{
+    padding: 5px 10px;
+    margin:0;
+}
+.card_text h2{
+    color: azure;
+    font-size: 1rem;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.card_text p{
+    color: rgb(193, 192, 191);
+    padding-top: 20px;
+}
+.buttonarea{
+    display: flex;
+    justify-content: center;
+}
+.add{
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: solid azure 1px;
+    border-radius: 5px;
+    color: aliceblue;
 }

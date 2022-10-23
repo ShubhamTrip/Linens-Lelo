@@ -1,0 +1,16 @@
+.card{
+    width: 22rem;
+    height: 30rem;
+    background-color:rgb(29, 29, 29);
+    border-radius: 5px 5px 15px 15px;
+    margin: 20px;
+}
+
+.card_img{
+    margin: 5px;
+}
+
+.card_img img{
+    width:21.4rem;
+    height: 20rem;
+}

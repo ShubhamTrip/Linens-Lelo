@@ -1,21 +1,20 @@
 import './App.css';
+import React,{useState} from 'react';
 import Nav from './Components/Nav/Nav';
 import Home from './Pages/Home/Home';
-import Products from './Pages/Products/Products';
 import {Route,Routes,BrowserRouter} from 'react-router-dom';
-import About from './Pages/About/About';
-import Contact from './Pages/Contact/Contact';
+import Cart from './Pages/Cart/Cart';
 
 function App() {
+  let[cart, setcart]=useState([]);
+  let len = cart.length;
   return (
     <div className="App">
         <BrowserRouter>
-          <Nav/>
+          <Nav length={len}/>
           <Routes>
-             <Route path='/'  element={<Home/>}/>
-             <Route path='/Products'  element={<Products/>}/>
-             <Route path='/About'  element={<About/>}/>
-             <Route path='/Contact'  element={<Contact/>}/>
+             <Route path='/'  element={<Home set={setcart} crt={cart}/>}/>
+             <Route path='/Cart' element={<Cart cart={cart} set={setcart}/>}/>
           </Routes>
         </BrowserRouter>
     </div>

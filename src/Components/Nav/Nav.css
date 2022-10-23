@@ -16,12 +16,7 @@
     height: 40px;
     width: 120px;
 }
-.navlink a{
-    color: azure;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px;
-}
+
 .navbutton button{
     border: solid azure 1px;
     background: transparent;
@@ -31,4 +26,9 @@
     margin: 5px;
     color: azure;
     border-radius: 2px;
+}
+
+.cart{
+    text-decoration: none;
+    color: aliceblue;
 }

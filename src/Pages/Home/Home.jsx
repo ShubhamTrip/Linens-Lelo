@@ -3,7 +3,7 @@ import './Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Card from '../../Components/Card/Card';
-export default function Home(){
+export default function Home(props){
 
     let [products, setproducts]= useState([]);
     useEffect(()=>{
@@ -27,14 +27,12 @@ export default function Home(){
                 </Carousel>
              </div>
              <h2>All Products</h2>
-             <div className='home_products'>
-             
+             <div className='home_products'>       
              {products.map(data =>(
-                           <Card cardimg={data.image} productname={data.title} price={data.price}/>
+                           <Card cardimg={data.image} productname={data.title} price={data.price} set={props.set} data={data} crt={props.crt}/>
                     ))
              }                  
              </div>
         </div>
     );
-
 }

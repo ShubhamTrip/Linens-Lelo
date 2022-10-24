@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
+import "./Cart.css";
 
-
-export default function Cart({cart}){
+export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
     useEffect(()=>{
         console.log(cart);
@@ -9,13 +9,24 @@ export default function Cart({cart}){
     },[]);
 
     return(
-     <div>
-        hello
+     <div className="main">
+        <div className="cart-list">
         {
-         products.map((data)=>{
-          return  <div><img src={data.image} alt="" /></div>
-        })
-    } </div> 
-
+        products.map((data)=>{
+         return <div className="cart-items">
+                  <div className="cart-items-image"><img src={data.image} alt="card"/></div>
+                  <div className="cart-items-text">
+                    <div className="cart-items-text-head">
+                        <h1>{data.title}</h1>
+                        <p id="description">{data.description.slice(0,100)}...</p>
+                        <p id="price">{data.price}</p>
+                  </div>
+                  <div className="quantity-buttons"><p id="inc">+</p><p id="dec">-</p></div>
+                  </div>
+                </div>
+         })
+         }
+        </div>
+    </div> 
     );
 }

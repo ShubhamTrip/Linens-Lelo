@@ -21,7 +21,7 @@ export default function Cart({cart,set}){
                         <p id="description">{data.description.slice(0,100)}...</p>
                         <p id="price">{data.price}</p>
                   </div>
-                  <div className="quantity-buttons"><p id="inc">+</p><p id="dec">-</p></div>
+                  <div className="quantity-buttons"><button id="inc">+</button><button id="dec">-</button></div>
                   </div>
                 </div>
          })

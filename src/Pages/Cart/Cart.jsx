@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from "react";
 import "./Cart.css";
+import CartCard from "../../Components/CartCard/CartCard";
 
 export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
-    let [quantity, setquantity]=useState(1);
     
     useEffect(()=>{
         console.log(cart);
@@ -14,20 +14,10 @@ export default function Cart({cart,set}){
      <div className="main">
         <div className="cart-list">
         { 
-        products.map((data)=>{
-        
-         return <div className="cart-items">
-                  <div className="cart-items-image"><img src={data.image} alt="card"/></div>
-                  <div className="cart-items-text">
-                    <div className="cart-items-text-head">
-                        <h1>{data.title}</h1>
-                        <p id="description">{data.description.slice(0,100)}...</p>
-                        <p id="price">{data.price}</p>
-                        <p id='quantity'>Quantity: {quantity}</p>
-                  </div>
-                  <div className="quantity-buttons"><button id="inc" onClick={()=>setquantity(quantity+1)}>+</button><button id="dec">-</button></div>
-                  </div>
-                </div>
+        products.map((data)=>{  
+         return <><CartCard title={data.title} description={data.description} price={data.price} image={data.image}/>
+          <hr/>
+         </>
          })
          }
         </div>

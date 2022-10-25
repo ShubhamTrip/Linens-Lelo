@@ -1,0 +1,19 @@
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cart-items-image{
+    height: 200px;
+    width: 200px;
+
+}
+.cart-items-image img{
+    height: 200px;
+    width: 200px;
+}
+.quantity-buttons button{
+    padding: 10px;
+    width: 80px;
+    margin: 10px;
+}

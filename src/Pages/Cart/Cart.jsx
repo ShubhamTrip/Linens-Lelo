@@ -3,6 +3,8 @@ import "./Cart.css";
 
 export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
+    let [quantity, setquantity]=useState(1);
+    
     useEffect(()=>{
         console.log(cart);
         setproducts(cart);
@@ -13,8 +15,6 @@ export default function Cart({cart,set}){
         <div className="cart-list">
         { 
         products.map((data)=>{
-
-        let [quantity, setquantity]=useState(1);
         
          return <div className="cart-items">
                   <div className="cart-items-image"><img src={data.image} alt="card"/></div>

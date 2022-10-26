@@ -1,11 +1,43 @@
 .main{
     padding: 40px;
     height: 100vh;
-    
+    display: flex;
+    justify-content: space-between;
 }
 .cart-list{
-    background-color: rgb(252, 218, 224);
+    background-color: rgb(206, 206, 206);
     border-radius: 10px;
     padding: 10px;
     width: 800px;
+}
+.order-summary{
+    width: 500px;
+    height: 150px;
+    background-color: rgb(196, 195, 195);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.order-summary h1{
+    color: aliceblue;
+}
+.order-summary div{
+    margin: 10px 10px 10px 0px;
+    display: flex;
+    font-weight: 700;
+}
+
+.order-summary div p{
+    padding-right: 20px;
+}
+
+.order-summary button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(98, 98, 255);
+    color: azure;
+    font-weight: 600;
+    font-family: sans-serif;
 }

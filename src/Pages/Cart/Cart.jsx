@@ -21,6 +21,14 @@ export default function Cart({cart,set}){
          })
          }
         </div>
+        <div className="order-summary">
+            <h1>Order Summary</h1>
+            <div>
+                <p>Total Amount :</p>
+                <p>$1000</p>
+            </div>
+            <button>Make Payment</button>
+        </div>
     </div> 
     );
 }

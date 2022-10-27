@@ -4,18 +4,24 @@ import CartCard from "../../Components/CartCard/CartCard";
 
 export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
-    
+    let [total,settotal]= useState(0);
     useEffect(()=>{
         console.log(cart);
         setproducts(cart);
     },[]);
+
+    useEffect(()=>{
+        let sum = products.reduce((partialSum, pro) => partialSum + pro.price, 0)
+
+        settotal(sum);
+    },[products])
 
     return(
      <div className="main">
         <div className="cart-list">
         { 
         products.map((data)=>{  
-         return <><CartCard title={data.title} description={data.description} price={data.price} image={data.image}/>
+         return <><CartCard title={data.title} description={data.description} price={data.price} image={data.image} />
           <hr/>
          </>
          })
@@ -25,7 +31,7 @@ export default function Cart({cart,set}){
             <h1>Order Summary</h1>
             <div>
                 <p>Total Amount :</p>
-                <p>$1000</p>
+                <p>${total}</p>
             </div>
             <button>Make Payment</button>
         </div>

@@ -24,7 +24,7 @@ export default function CartCard(props){
                         <p id="price">$ {props.price}</p>
                         <p id='quantity'>Quantity: {quantity}</p>
                        </div>
-                      <div className="quantity-buttons"><button id="inc" onClick={()=>inc()}>+</button><button id="dec" onClick={()=>dec()}>-</button></div>
+                      <div className="quantity-buttons"><button id="inc" onClick={()=>inc()}>+</button><button id="dec" onClick={()=>dec()}>-</button> {props.but}</div>
                   </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import "./Cart.css";
 import CartCard from "../../Components/CartCard/CartCard";
-
+import { Scrollbar } from 'react-scrollbars-custom';
 export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
     let [total,settotal]= useState(0);
@@ -14,14 +14,17 @@ export default function Cart({cart,set}){
         settotal(sum);
     },[products])
 
-    
+    function del(id){
+        set(products.filter((e)=>e.id!=id))
+    }
 
     return(
      <div className="main">
-        <div className="cart-list">
+       <div className="cart-list">
         { 
         products.map((data)=>{  
-         return <><CartCard title={data.title} description={data.description} price={data.price} image={data.image} total={total} settot={settotal}/>
+         return <><CartCard title={data.title} description={data.description} price={data.price}
+          image={data.image} total={total} settot={settotal} but={<button onClick={()=>del(data.id)}>Delete</button>}/>
           <hr/>
          </>
          })

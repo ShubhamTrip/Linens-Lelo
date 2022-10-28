@@ -3,15 +3,16 @@ import './CartCard.css';
 export default function CartCard(props){
     
     let [quantity,setquantity]=useState(1);
-
-
+    
     function dec(){
         if(quantity >1){
             setquantity(quantity-1)
+            props.settot(props.total - (props.price))
         }
     }
     function inc(){
-        setquantity(quantity+1)
+         setquantity(quantity+1)
+         props.settot(props.total+(props.price*quantity))
     }
     return(
         <div className="cart-items">

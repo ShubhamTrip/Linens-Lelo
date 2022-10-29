@@ -21,7 +21,7 @@ export default function Home(props){
                 showStatus={false}>
                 {
                     products.map(data=>(
-                        <div className='caraosel_img' ><img src={data.image}/></div>
+                        <div className='caraosel_img' ><img src={data.image} alt='product images'/></div>
                     ))
                 }  
                 </Carousel>

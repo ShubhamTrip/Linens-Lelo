@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './CartCard.css';
 export default function CartCard(props){
     

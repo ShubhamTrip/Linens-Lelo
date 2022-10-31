@@ -34,3 +34,35 @@
     margin: 10px 10px 10px  0px;
 }
 
+@media screen and (max-width:1050px) {
+    .cart-items-text{
+        padding-left:30px;
+    }
+    .cart-items-text-head h1{
+        font-size: 16px;
+    }
+    .cart-items-text-head p{
+        font-size: 14px;
+    }
+    .cart-items-image{
+        height: 170px;
+        width: 170px;
+    
+    }
+    .cart-items-image img{
+        height: 170px;
+        width: 170px;
+    }
+    .quantity-buttons button{
+        padding:8px;
+        width: 60px;
+        border: none;
+        border-radius: 5px;
+        margin: 8px 8px 8px 0px;
+    }
+    #price{
+        font-weight: 600;
+        color: rgb(66, 66, 66);
+        margin: 8px 8px 8px  0px;
+    }   
+}

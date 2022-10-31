@@ -9,10 +9,12 @@
     border-radius: 10px;
     padding: 10px;
     width: 800px;
+    margin-right: 20px;
     max-height: 600px;
 }
 .order-summary{
     width: 500px;
+    margin-left: 20px;
     height: 150px;
     background-color: rgb(196, 195, 195);
     border-radius: 10px;
@@ -41,4 +43,11 @@
     color: azure;
     font-weight: 600;
     font-family: sans-serif;
+}
+
+@media screen and (max-width: 1050px) {
+    .main{
+        padding: 25px;
+        background-color: red;
+    }
 }

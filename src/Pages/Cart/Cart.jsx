@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import "./Cart.css";
 import CartCard from "../../Components/CartCard/CartCard";
-//import { Scrollbar } from 'react-scrollbars-custom';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 export default function Cart({cart,set}){
     let [products,setproducts]=useState([]);
     let [total,settotal]= useState(0);
@@ -21,7 +21,9 @@ export default function Cart({cart,set}){
     return(
      <div className="main">
         
+        
         <div className="cart-list">
+        <Scrollbars>
         { 
         products.map((data)=>{  
          return <><CartCard title={data.title} description={data.description} price={data.price}
@@ -30,7 +32,9 @@ export default function Cart({cart,set}){
          </>
          })
          }
+         </Scrollbars>
         </div>
+        
         
         <div className="order-summary">
             <h1>Order Summary</h1>

@@ -18,6 +18,7 @@ export default function Home(props){
                 autoPlay={true}
                 transitionTime={3}
                 infiniteLoop={true}
+                showIndicators={false}
                 showStatus={false}>
                 {
                     products.map(data=>(

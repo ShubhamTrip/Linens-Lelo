@@ -28,3 +28,29 @@
 .home h2{
     padding: 20px 50px 0px 50px;
 }
+
+@media screen and (max-width: 550px) {
+    .home_products{
+        padding: 5px 5px;
+    } 
+    .caraosel{
+        height: 50%;
+    }
+    .caraosel .car{
+        height: 50%;
+    }
+    .caraosel_img{
+        min-height: 300px;
+        max-height: 300px;     
+    }
+    .caraosel_img img{
+        height: 300px;
+        max-width: 300px;
+    }
+    .home h2{
+        padding: 30px 30px 0px 10px;
+    }
+    .home_products{
+        padding: 10px 10px;
+    }
+}

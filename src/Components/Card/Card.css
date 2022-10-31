@@ -42,3 +42,49 @@
     border-radius: 5px;
     color: aliceblue;
 }
+
+@media screen and (max-width: 1050px) {
+    .card{
+        width: 15rem;
+        margin: 15px;
+    }   
+    .card_img img{
+        width:14.6rem;
+        height: 14rem;
+    }
+    .card_text h2{
+        color: azure;
+        font-size: 0.7rem;
+        height: 40px;
+    }
+    .add{
+        font-size: 0.7rem;
+    }
+    .card_text p{
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card{
+        width: 9.5rem;
+        margin: 9.5px;
+    }   
+    .card_img img{
+        width:9rem;
+        height: 9rem;
+    }
+    .card_text h2{
+        color: azure;
+        font-size: 0.6rem;
+        height: 30px;
+    }
+    .add{
+        font-size: 0.6rem;
+    }
+    .card_text p{
+        padding-top: 10px;
+        font-size: 0.7rem;
+    }
+}

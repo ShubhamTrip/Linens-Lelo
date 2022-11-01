@@ -1,0 +1,58 @@
+.caraosel{
+    width: 100%;
+    height: 600px;
+}
+
+.caraosel .car{
+    width: 100%;
+    height: 600px;
+}
+
+.caraosel_img{
+    min-height: 600px;
+    max-height: 600px;
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+}
+.caraosel_img img{
+    height: 600px;
+    max-width: 600px;
+}
+.home_products{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home_products a{
+    text-decoration: none;
+}
+.home h2{
+    padding: 20px 50px 0px 50px;
+}
+
+@media screen and (max-width: 550px) {
+    .home_products{
+        padding: 5px 5px;
+    } 
+    .caraosel{
+        height: 50%;
+    }
+    .caraosel .car{
+        height: 50%;
+    }
+    .caraosel_img{
+        min-height: 300px;
+        max-height: 300px;     
+    }
+    .caraosel_img img{
+        height: 300px;
+        max-width: 300px;
+    }
+    .home h2{
+        padding: 30px 30px 0px 10px;
+    }
+    .home_products{
+        padding: 10px 10px;
+    }
+}

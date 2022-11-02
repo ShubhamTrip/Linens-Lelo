@@ -1,5 +1,34 @@
 .product{
     width: 100%;
     height: 100%;
-    background-color: rgb(53, 53, 53);
+}
+
+.productcard{
+    background-color: rgb(186, 182, 182);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
+.productcard h1{
+    padding-bottom: 50px;
+}
+
+.productinfo{
+    display: flex;
+}
+.productinfo img{
+    max-height: 300px;
+    width: 300px;
+    border: solid black;
+}
+
+.productdescription{
+    padding-left: 50px;
+}
+
+.productdescription h3{
+    padding-bottom: 30px;
+}
+.productdescription p{
+    text-align: justify;
 }

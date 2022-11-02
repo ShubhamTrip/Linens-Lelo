@@ -11,6 +11,7 @@ export default function Home(props){
         fetch('https://fakestoreapi.com/products')
         .then(res=>res.json()).then(data=> setproducts(data));
     },[])
+
     return(
         <div className='home'>
              <div className='caraosel'>

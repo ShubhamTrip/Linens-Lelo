@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Nav length={len}/>
           <Routes>
-             <Route path='/'  element={<Home set={setcart} crt={cart}/>}/>
+             <Route index  element={<Home set={setcart} crt={cart}/>}/>
              <Route path='/Cart' element={<Cart cart={cart} set={setcart}/>}/>
              <Route path='/home/:id' element={<Product/>}/>
           </Routes>

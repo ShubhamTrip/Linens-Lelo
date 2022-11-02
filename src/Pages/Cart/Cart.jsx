@@ -20,22 +20,24 @@ export default function Cart({cart,set}){
 
     return(
      <div className="main">
-        
-        
-        <div className="cart-list">
-        <Scrollbars>
-        { 
-        products.map((data)=>{  
-         return <><CartCard title={data.title} description={data.description} price={data.price}
-          image={data.image} total={total} settot={settotal} but={<button onClick={()=>del(data.id)}>Delete</button>}/>
-          <hr/>
-         </>
-         })
-         }
-         </Scrollbars>
-        </div>
-        
-        
+        {
+          products.length==0? <div>No products added</div> :
+          <div className="cart-list">
+          <Scrollbars>
+          { 
+          products.map((data)=>{  
+           return <><CartCard title={data.title} description={data.description} price={data.price}
+            image={data.image} total={total} settot={settotal} but={<button onClick={()=>del(data.id)}>Delete</button>}/>
+            <hr/>
+           </>
+           })
+           }
+           </Scrollbars>
+          </div>
+          
+        }
+
+          
         <div className="order-summary">
             <h1>Order Summary</h1>
             <div>

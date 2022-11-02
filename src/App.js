@@ -16,7 +16,7 @@ function App() {
           <Routes>
              <Route index  element={<Home set={setcart} crt={cart}/>}/>
              <Route path='/Cart' element={<Cart cart={cart} set={setcart}/>}/>
-             <Route path='/home/:id' element={<Product/>}/>
+             <Route path='/home/:id' element={<Product cart={cart} set={setcart}/>}/>
           </Routes>
         </BrowserRouter>
     </div>

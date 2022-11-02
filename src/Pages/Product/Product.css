@@ -4,7 +4,7 @@
 }
 
 .productcard{
-    background-color: rgb(186, 182, 182);
+    background-color: rgb(219, 217, 217);
     padding: 50px;
     margin: 50px;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 .productinfo img{
     max-height: 300px;
     width: 300px;
-    border: solid black;
+    
 }
 
 .productdescription{
@@ -31,4 +31,12 @@
 }
 .productdescription p{
     text-align: justify;
+}
+
+.addtocart{
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   background-color: rgb(255, 204, 0);
+   margin-top: 50px; 
 }
